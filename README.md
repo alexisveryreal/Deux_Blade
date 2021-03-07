@@ -9,15 +9,19 @@
 <br><br>
 
 # Deux_Blade
+
 Sorts written in C++
 
 ### Prereqs
+
 brain
 
 ## Documentations
-The source code of Good-Nuit can be found [here](./src/).
+
+The source code of Deux_Blade can be found [here](./src/).
 
 ## Built With
+
 * KnoWlEdge
 
 ## Authors
@@ -31,4 +35,5 @@ See also the list of [contributors](https://github.com/alexisveryreal/Good_Nuit-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
+
 * Me
