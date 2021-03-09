@@ -1,13 +1,20 @@
-OBJS = main.o
+OBJS = deMain.o bubbleSort.o
 CC = g++ -g -Wall -pedantic -std=c++11
+DEPS = bubbleSort.h
 
-all = main
+all: deMain
 
-main: $(OBJS)
-	$(CC) -Wall -g -o main $(OBJS)
+bubbleSort: $(OBJS)
+	$(CC) -Wall -g -o bubbleSort $(OBJS)
 
-main.o: main.cpp
-	$(CC) -Wall -g -c main.cpp
+bubbleSort.o: bubbleSort.cpp
+	$(CC) -Wall -g -c bubbleSort.cpp
+	
+deMain: $(OBJS)
+	$(CC) -Wall -g -o deMain $(OBJS)
+
+deMain.o: deMain.cpp $(DEPS)
+	$(CC) -Wall -g -c deMain.cpp
 
 clean:
 	rm $(OBJS)
